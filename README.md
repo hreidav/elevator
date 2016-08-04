@@ -1,1 +1,1 @@
-# elevator.github.io
+Elevator simulator program
