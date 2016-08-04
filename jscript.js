@@ -72,7 +72,7 @@ function function_go(){
 		if (next_floor==2) {
 			for(i=current_floor;i>=next_floor;i--){
 				setTimeout("lift"+i+"()", 2000);
-		                                    		};
+				                               		};
 							};			
 		if (next_floor==3) {
 			for(i=current_floor;i>=next_floor;i--){
@@ -116,9 +116,51 @@ function function_go(){
 next_floor=0; /*обнулення наступного поверха*/
 };
 
+
+/*натиснення кнопок на поверхах*/
+function f_floor1(){
+	next_floor=1;
+	function_go();
+};
+function f_floor2(){
+	next_floor=2;
+	function_go();
+};
+function f_floor3(){
+	next_floor=3;
+	function_go();
+};
+function f_floor4(){
+	next_floor=4;
+	function_go();
+};
+function f_floor5(){
+	next_floor=5;
+	function_go();
+};
+function f_floor6(){
+	next_floor=6;
+	function_go();
+};
+function f_floor7(){
+	next_floor=7;
+	function_go();
+};
+function f_floor8(){
+	next_floor=8;
+	function_go();
+};
+function f_floor9(){
+	next_floor=9;
+	function_go();
+};
+function f_floor10(){
+	next_floor=10;
+	function_go();
+};
 /*процедури анімації руху ліфта та відображення поверхів на табло*/
 function lift1(){
-	 document.getElementById("floor1").style.background="yellow";
+	 document.getElementById("floor1").style.background="green";
 	 document.getElementById("floor2").style.background="white";
      document.getElementById("floor3").style.background="white";
      document.getElementById("floor4").style.background="white";
@@ -133,7 +175,7 @@ function lift1(){
 };
 function lift2(){
 	 document.getElementById("floor1").style.background="white";
-	 document.getElementById("floor2").style.background="yellow";
+	 document.getElementById("floor2").style.background="green";
      document.getElementById("floor3").style.background="white";
      document.getElementById("floor4").style.background="white";
      document.getElementById("floor5").style.background="white";
@@ -142,13 +184,13 @@ function lift2(){
      document.getElementById("floor8").style.background="white";
      document.getElementById("floor9").style.background="white";
      document.getElementById("floor10").style.background="white";
-     document.getElementById("screen_direction").innerHTML="2";
+     setTimeoutdocument.getElementById("screen_direction").innerHTML="2";
      current_floor=2;
 };
 function lift3(){
 	 document.getElementById("floor1").style.background="white";
 	 document.getElementById("floor2").style.background="white";
-     document.getElementById("floor3").style.background="yellow";
+     document.getElementById("floor3").style.background="green";
      document.getElementById("floor4").style.background="white";
      document.getElementById("floor5").style.background="white";
      document.getElementById("floor6").style.background="white";
@@ -163,7 +205,7 @@ function lift4(){
 	 document.getElementById("floor1").style.background="white";
 	 document.getElementById("floor2").style.background="white";
      document.getElementById("floor3").style.background="white";
-     document.getElementById("floor4").style.background="yellow";
+     document.getElementById("floor4").style.background="green";
      document.getElementById("floor5").style.background="white";
      document.getElementById("floor6").style.background="white";
      document.getElementById("floor7").style.background="white";
@@ -178,7 +220,7 @@ function lift5(){
 	 document.getElementById("floor2").style.background="white";
      document.getElementById("floor3").style.background="white";
      document.getElementById("floor4").style.background="white";
-     document.getElementById("floor5").style.background="yellow";
+     document.getElementById("floor5").style.background="green";
      document.getElementById("floor6").style.background="white";
      document.getElementById("floor7").style.background="white";
      document.getElementById("floor8").style.background="white";
@@ -193,7 +235,7 @@ function lift6(){
      document.getElementById("floor3").style.background="white";
      document.getElementById("floor4").style.background="white";
      document.getElementById("floor5").style.background="white";
-     document.getElementById("floor6").style.background="yellow";
+     document.getElementById("floor6").style.background="green";
      document.getElementById("floor7").style.background="white";
      document.getElementById("floor8").style.background="white";
      document.getElementById("floor9").style.background="white";
@@ -208,7 +250,7 @@ function lift7(){
      document.getElementById("floor4").style.background="white";
      document.getElementById("floor5").style.background="white";
      document.getElementById("floor6").style.background="white";
-     document.getElementById("floor7").style.background="yellow";
+     document.getElementById("floor7").style.background="green";
      document.getElementById("floor8").style.background="white";
      document.getElementById("floor9").style.background="white";
      document.getElementById("floor10").style.background="white";
@@ -223,7 +265,7 @@ function lift8(){
      document.getElementById("floor5").style.background="white";
      document.getElementById("floor6").style.background="white";
      document.getElementById("floor7").style.background="white";
-     document.getElementById("floor8").style.background="yellow";
+     document.getElementById("floor8").style.background="green";
      document.getElementById("floor9").style.background="white";
      document.getElementById("floor10").style.background="white";
      document.getElementById("screen_direction").innerHTML="8";
@@ -238,7 +280,7 @@ function lift9(){
      document.getElementById("floor6").style.background="white";
      document.getElementById("floor7").style.background="white";
      document.getElementById("floor8").style.background="white";
-     document.getElementById("floor9").style.background="yellow";
+     document.getElementById("floor9").style.background="green";
      document.getElementById("floor10").style.background="white";
      document.getElementById("screen_direction").innerHTML="9";
      current_floor=9;
@@ -253,7 +295,7 @@ function lift10(){
      document.getElementById("floor7").style.background="white";
      document.getElementById("floor8").style.background="white";
      document.getElementById("floor9").style.background="white";
-     document.getElementById("floor10").style.background="yellow";
+     document.getElementById("floor10").style.background="green";
      document.getElementById("screen_direction").innerHTML="10";
      current_floor=10;
 };
